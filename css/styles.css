@@ -17,6 +17,18 @@
 .navbar-toggler {
   border-color: #ffffff; 
 }
+/* Standaard grootte logo */
+.navbar-logo {
+    width: auto; /* Houdt proporties */ 
+ 
+}
+
+/* Voor schermen md of kleiner: maak 30% kleiner */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 100px; /* 60px * 0.7 = 42px */
+    }
+}
 
 .navbar-toggler-icon {
   filter: invert(1);
