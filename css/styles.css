@@ -166,17 +166,33 @@ figure.simple img:hover {
     transition: transform 0.3s ease;
 }
 .project-box {
-  height: 150px;
+  height: 260px;
   background-color: rgb(18, 18, 66);
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.project-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    font-weight: 600;
 }
 
