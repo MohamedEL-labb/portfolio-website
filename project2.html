@@ -57,11 +57,11 @@
     <article class="mb-5">
       <div class="row">
         <div class="col-md-6">
-          <h1>Project 1</h1>
-          <h5>Oefening Webwiz</h5>
-          <p>In dit project kregen wij de opdracht om een netwerk te maken voor een denkbeeldig bedrijf. <br>
-            We moesten gestructureerd bekabelen, een factuur, patchplan en racklayout moeten maken. We moesten rekening houden met verschillende aspecten.<br>
-            <br>Kopere kabels mochten niet langer dan 100OM zijn.
+          <h1>Project 2</h1>
+          <h5>Kluisbeveiliging</h5>
+          <p>Dit was mijn eindejaarsproef in het 6de jaar informatica beheer. <br>
+           In dit project koos ik ervoor om een kluis helemaal te automatiseren en te beveiligen aan de hand van domotica.<br>
+            De kluis kon in realtime beweging in de kluis detecteren, had een vingerafdrukcensor en kon met pompen waterstroming regelen.
           </p>
         </div>
 
@@ -69,21 +69,22 @@
           <div class="row g-3">
             <div class="col-12 col-md-4">
               <figure class="simple">
-                <img src="images/Schermafbeelding 2025-11-10 190259.png" alt="" class="img-fluid">
-                <figcaption>In deze code vragen we dus constant een kleur aan <br> en slaan we deze op in de list mocht deze voldoen <br> aan de voorwaarden.</figcaption>
+                <img src="images/arduino.jpg" alt="" class="img-fluid">
+                <figcaption>Arduino Uno Wifi rev2 was de basis van mijn project.<br> Deze bood stroom aan en verbond alles met elkaar.</figcaption>
               </figure>
             </div>
             <div class="col-12 col-md-4">
               <figure class="simple">
-                <img src="images/Schermafbeelding 2025-11-10 190143.png" alt="" class="img-fluid">
-                <figcaption>In deze code vragen we vervolgens een diersoort <br> en slaan we deze in een andere list op. maar ook enkel<br> als deze is ingevuld.</figcaption>
+                <img src="images/adafruit.jpg" alt="" class="img-fluid">
+                <figcaption>Mijn vingerafdrukcensor van het merk adafruit kon de kluis openen. <br>Het kon ID's opslaan herkennen en aanmaken.</figcaption>
               </figure>
             </div>
             <div class="col-12 col-md-4">
               <figure class="simple">
-                <img src="images/Schermafbeelding 2025-11-10 190217.png" alt="" class="img-fluid">
-                <figcaption>Als laatst vragen we in deze code een spelsoort. <br> Deze slaan we op in de lijst mete .append in python <br> daarna worden alle listen opgeslagen in de dictionary.</figcaption>
+                <img src="images/arduinolock.jpg" alt="" class="img-fluid">
+                <figcaption>Het slot van mijn kluis. <br> Deze kon enkel open bij een positieve match.</figcaption>
               </figure>
+              
             </div>
           </div>
         </div>
@@ -95,16 +96,57 @@
     <article class="info-box mb-5">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <img src="images/Webwizfoto.png" alt="" class="img-fluid">
+          <img src="images/maxresdefault.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-8">
-          <p>Nadat de gebruiker alles juist ingevuld heeft dan krijgen we dit als voorbeeld.
-            Wat we zien zijn 4 lists die elks hebben opgeslagen wat dat we in de voorbeelden hebben gegeven.
+          <p>Dit zag er op het begin zo uit. Ik teste alles naast elkaar voor ik deze fysiek op de kluis ging plaatsen. <br>
+            Ik heb alles geprogrammeerd in arduino.cc. Ondertussen had ik alles al op elkaar laten reageren voor optimale bescherming van de kluis. <br>
+            Er ontbraken nog enkele segmenten zoals een bewegingscensor en een warpompsysteem. Ik heb mijn inspiratie des tijds toen gehaald uit de Spaanse serie Lacasa De Papel. <br>
+            Mijn bewegingscensor heb ik geprogrammeerd zodat die enkel werkt wanneer mijn kluis dicht is. Dit heb ik gedaan door een waarde door te geven wanneer dat deze open was. Wanneer de sencor deze waarde niet zag, <br>
+            dan bleef die scannen naar beweging. Zodra er beweging gedetecteerd werd draaiden de waterpompen.
           </p>
         </div>
       </div>
       <hr>
     </article>
+
+    <article class="mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Details</h5>
+          <p>Vanaf dat mijn bewegingscensor wat detecteerde stroomde er water door de kluis.<br>
+           Deze werd voor 80% gevuld. Zodat een denkbeeldige indringer niet dood moest verdrinken. Vervolgens heb ik een Windows Form applicatie gemaakt met enkele buttons.<br>
+            Deze buttons konden het volgende: een nieuwe vingerafdruk registreren, de kluis openen, water laten stromen, water afzuigen.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <figure class="simple">
+                <img src="images/Waterpomp.jpg" alt="" class="img-fluid">
+                <figcaption>Dit was het model van mijn waterpompen, Het stuurde water van plaats A naar B op commando.</figcaption>
+              </figure>
+            </div>
+            <div class="col-12 col-md-4">
+              <figure class="simple">
+                <img src="images/bewegingssensor.jpg" alt="" class="img-fluid">
+                <figcaption>Mijn bewegingscensor die bijna 24/7 draaiden.</figcaption>
+              </figure>
+            </div>
+            <div class="col-12 col-md-4">
+              <figure class="simple">
+                <img src="images/smartvault.jpg" alt="" class="img-fluid">
+                <figcaption>Het smart gedeelte van mijn kluis. <br> Alles was inderdaad te bedienen via smartphone.</figcaption>
+              </figure>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </article>
+
 
         </main>
 
