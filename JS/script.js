@@ -19,4 +19,3 @@ document.addEventListener("DOMContentLoaded", () => {
     .bindPopup("Deurne, Antwerpen")
     .openPopup();
 });
-
