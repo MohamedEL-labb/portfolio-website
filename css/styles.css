@@ -161,10 +161,7 @@ p {
 }
 
 
-figure.simple img:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-}
+
 .project-box {
   height: 260px;
   background-color: rgb(18, 18, 66);

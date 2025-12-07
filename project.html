@@ -12,39 +12,65 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reset.css">
   <script src=""></script>
 </head>
 
 <body class="body">
- <nav class="navbar navbar-expand-md navbar-dark py-3">
-     
-  <div class="container">
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #0d6efd;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/9fdd16bbf3d04ff1b7eabe0b35ec677a-free.png" 
+             alt="Logo" 
+             class="img-fluid navbar-logo">
+      </a>
 
-   <a class="navbar-brand" href="index.html" aria-label="home">  </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav text-center flex-column flex-md-row align-items-center">
+          <li class="nav-item dropdown d-flex align-items-center">
 
-    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-  <ul class="navbar-nav text-center">
 
-  <li class="nav-item">
-    <a class="nav-link px-3" href="index.html">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link px-3" href="portfolio.html">Portfolio</a>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link px-3" href="contact.html">Contact</a>
-  </li>
-</ul>
+  <a href="portfolio.html"
+     class="nav-link nav-link-responsive px-3">
+    Portfolio
+  </a>
 
+ 
+  <a class="nav-link dropdown-toggle px-1"
+     href="#"
+     id="portfolioDropdown"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+  </a>
+
+
+  <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+    <li><a class="dropdown-item" href="project.html">Project 1</a></li>
+    <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+    <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+    <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+    <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+    <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+  </ul>
+
+</li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-link-responsive px-3" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-responsive px-3" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-  </div>
-</nav>
+  </nav>
 
   
 
@@ -59,9 +85,10 @@
         <div class="col-md-6">
           <h1>Project 1</h1>
           <h5>Oefening Webwiz</h5>
-          <p>In dit project kregen wij de opdracht om een netwerk te maken voor een denkbeeldig bedrijf. <br>
+          <p>In dit project kregen wij de opdracht om een netwerk te maken voor een denkbeeldig bedrijf. 
             We moesten gestructureerd bekabelen, een factuur, patchplan en racklayout moeten maken. We moesten rekening houden met verschillende aspecten.<br>
-            <br>Kopere kabels mochten niet langer dan 100OM zijn.
+            <br>Kopere kabels mochten niet langer dan 100M zijn. We kregen ook een aantal toestellen die wij moesten gebruiken. Op het plan moesten wij ervoor zorgen dat de kabels via de muren gingen.
+
           </p>
         </div>
 
@@ -69,20 +96,21 @@
           <div class="row g-3">
             <div class="col-12 col-md-4">
               <figure class="simple">
-                <img src="images/Schermafbeelding 2025-11-10 190259.png" alt="" class="img-fluid">
-                <figcaption>In deze code vragen we dus constant een kleur aan <br> en slaan we deze op in de list mocht deze voldoen <br> aan de voorwaarden.</figcaption>
+                <img src="images/enddevce3.png" alt="" class="img-fluid">
+                <figcaption>Ik ben begonnen met als eerst alle end deivces.<br>Door op deze knop te drukken kan je ze toevoegen.<br>Ik maakte gebruik van laptops, pc's, printers en VOIP.</figcaption>
               </figure>
             </div>
             <div class="col-12 col-md-4">
               <figure class="simple">
-                <img src="images/Schermafbeelding 2025-11-10 190143.png" alt="" class="img-fluid">
-                <figcaption>In deze code vragen we vervolgens een diersoort <br> en slaan we deze in een andere list op. maar ook enkel<br> als deze is ingevuld.</figcaption>
+                <img src="images/123.png" alt="" class="img-fluid">
+                <figcaption>Door op deze knop te drukken kunnen wij routers en switches plaatsen. <br> Hier hadden we specefieke modellen nodig voor de optimale verbindingen.</figcaption>
               </figure>
+              
             </div>
             <div class="col-12 col-md-4">
               <figure class="simple">
-                <img src="images/Schermafbeelding 2025-11-10 190217.png" alt="" class="img-fluid">
-                <figcaption>Als laatst vragen we in deze code een spelsoort. <br> Deze slaan we op in de lijst mete .append in python <br> daarna worden alle listen opgeslagen in de dictionary.</figcaption>
+                <img src="images/Wallmount.png" alt="" class="img-fluid">
+                <figcaption>Als laatst hadden we dit model van wallmount nodig. <br> Deze dient om alle kabels door de muren met 1 hoofdkabel te laten vervoeren.</figcaption>
               </figure>
             </div>
           </div>
@@ -95,17 +123,76 @@
     <article class="info-box mb-5">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <img src="images/Webwizfoto.png" alt="" class="img-fluid">
+          <img src="images/packettracerplan.png" alt="" class="img-fluid">
         </div>
         <div class="col-md-8">
-          <p>Nadat de gebruiker alles juist ingevuld heeft dan krijgen we dit als voorbeeld.
-            Wat we zien zijn 4 lists die elks hebben opgeslagen wat dat we in de voorbeelden hebben gegeven.
+          <p>Om te beginnen heb ik elke pc verbonden met een VIOP met een bekabeling. Vervolgens heb ik mijn VOIP verbonden met mijn wallmount.
+            ik heb elke wallmount optimaal gebruikt door er 2 VOIP's een printer en een switch in gezet.
+            <br>
+            Ik heb enkele laptop's niet verbonden met een kabel omdat deze niet verbonden moesten worden met het netwerk deze waren draadloos en
+            konden meegenomen worden. Een switch zorgt voor het transport tussen verschillende lagen voor een correcte verbinding.
           </p>
         </div>
       </div>
       <hr>
     </article>
 
+     <article class="mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Vervolg Webwiz</h5>
+          <p>Nadat we alles met elkaar hebben verbonden, gaan we alles verbinden tot aan in onze rack.
+           Een rack is eigienlijk de centrale plaats waar al je end devices en switches een verbinding krijgen met servers, patchpanels etc...<br>
+            We Plaatsen de kabels in onze patchpanels met een ethernet kabel. De poort die we gebruiken is op dit moment niet van essentiëel belang zolang het maar niet in de 2 laatste sterke poorten zit.
+            Vervolgens verbinden wij deze patchpanels met onze servers. De servers worden hiermee verbonden met de zelfde kabels maar hier gebruiken wij wel de laatste 2 poorten. Het verschil is dat de laatste 
+            2 poorten vele sneller zijn dan de rest.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <figure class="simple">
+                <img src="images/CopperStraighttrue.png" alt="" class="img-fluid">
+                <figcaption>We gebruiken de kopere kabels ofwel de Copper straight-trought.<br>Deze kan je ook herkennen door de groene kleur.</figcaption>
+              </figure>
+            </div>
+            <div class="col-12 col-md-4">
+              <figure class="simple">
+                <img src="images/server.png" alt="" class="img-fluid">
+                <figcaption>Voor de server bestaat er maar 1 model die staat bij enddevices. <br> Het beste is om de server onderaan in je rack te plaatsen aangezien dit het meeste weegt.</figcaption>
+              </figure>
+              
+            </div>
+            <div class="col-12 col-md-4">
+              <figure class="simple">
+                <img src="images/patchpanel.png" alt="" class="img-fluid">
+                <figcaption>Dit is de patchpanel die we gebruikten met 24 poorten. <br>Deze zorgt voor een connectie tussen devicces en de server. </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </article>
+
+   
+    <article class="info-box mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="images/Packettracerrack.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <p>Om te beginnen heb ik elke pc verbonden met een VIOP met een bekabeling. Vervolgens heb ik mijn VOIP verbonden met mijn wallmount.
+            ik heb elke wallmount optimaal gebruikt door er 2 VOIP's een printer en een switch in gezet.
+            Wat we zien zijn 4 lists die elks hebben opgeslagen wat dat we in de voorbeelden hebben gegeven. <br>
+            Ik heb enkele laptop's niet verbonden met een kabel omdat deze niet verbonden moesten worden met het netwerk deze waren draadloos en
+            konden meegenomen worden. Een switch zorgt voor het transport tussen verschillende lagen voor een correcte verbinding.
+          </p>
+        </div>
+      </div>
+      <hr>
+    </article>
         </main>
 
 
